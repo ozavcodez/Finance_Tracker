@@ -10,12 +10,13 @@ const Chart: React.FC = () => {
   }));
 
   return (
-    <ResponsiveContainer width="100%" height={400}>
+    <div className='-z-50'>
+        <ResponsiveContainer width="100%" height={400}>
       <LineChart data={data}>
         {/* <CartesianGrid strokeDasharray="3 3" /> */}
-        {/* <XAxis dataKey="date" />
-        <YAxis /> */}
-        <Tooltip />
+        <XAxis dataKey="date" />
+        <YAxis />
+        {/* <Tooltip /> */}
         <Legend />
         <Line type="monotone" 
         dataKey="amount" 
@@ -23,6 +24,8 @@ const Chart: React.FC = () => {
         />
       </LineChart>
     </ResponsiveContainer>
+    </div>
+    
   );
 };
 
