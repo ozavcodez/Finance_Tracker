@@ -45,6 +45,7 @@ const InputForm: React.FC<InputFormProps> = ({ onClose }) => {
       <div>
         <label className="block text-sm font-medium text-gray-700">Category:</label>
         <input
+        id="category"
           type="text"
           value={category}
           onChange={(e) => setCategory(e.target.value)}
@@ -55,6 +56,7 @@ const InputForm: React.FC<InputFormProps> = ({ onClose }) => {
       <div>
         <label className="block text-sm font-medium text-gray-700">Amount:</label>
         <input
+        id="number"
           type="number"
           value={amount}
           onChange={(e) => setAmount(parseFloat(e.target.value))}
@@ -65,6 +67,7 @@ const InputForm: React.FC<InputFormProps> = ({ onClose }) => {
       <div>
         <label className="block text-sm font-medium text-gray-700">Date:</label>
         <input
+        id="date"
           type="date"
           value={date}
           onChange={(e) => setDate(e.target.value)}
