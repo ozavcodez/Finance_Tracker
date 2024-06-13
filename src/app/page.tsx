@@ -4,8 +4,8 @@ import Head from 'next/head';
 import Modal from '../components/Modal';
 import InputForm from '../components/InputForm';
 import Image from "next/image";
-import TransactionList from "./transaction-list/page";
 import Chart from '../components/Chart';
+import TransactionList from '@/components/TransactionList';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);

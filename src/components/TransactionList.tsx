@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { useStore } from '../../store/transactionStore';
+import { useStore } from '../store/transactionStore';
 
 
 const TransactionList: React.FC = () => {
